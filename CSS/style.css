@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 16px;
+}
+body {
+    position: relative;
+}
+.container {
+    position: relative;
+}
+.header-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.topScreen {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+.topScreen .left {
+    display: flex;
+    gap: 13px;
+}
+.topScreen .right {
+    display: flex;
+    gap: 13px;
+}
+.head {
+    position: relative;
+    width: 100%;
+}
+.head img {
+    position: relative;
+    width: 100%;
+    height: 96vh;
+}
+.head .nav {
+    z-index: 10;
+    position: absolute;
+    transform: translate(-50%,10%);
+    top: 5%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;
+    background-color: teal;
+}
+.nav img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 0 5px 0 5px;
+    border-radius: 50%;
+}
+.nav .box {
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    background: white;
+}
+.box i {
+    margin-right: 5px;
+    color: black;
+    font-size: 16px;
+    font-weight: 200;
+}
+.box input {
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+input::placeholder {
+    font-weight: 400;
+    color: black;
+    font-size: 16px;
+}
+.nav a {
+    color: white;
+    font-weight: 100;
+    font-size: 16px;
+}
+h3 {
+    text-align: center;
+    font-size: 34px;
+    color: blue;
+    -webkit-text-stroke: 0.4px gold;
+    font-weight: 700;
+    transition-delay: 0.5s;
+    transition: 1s;
+    background-color: #549ffc;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.section .box {
+    position: relative;
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.section .box:hover {
+    box-shadow: inset 0 0 15px 6px snow;
+}
+.section .box img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.section .box p {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    font-size: 32px;
+    color: azure;
+    font-weight: 500;
+    transition: 1.2s;
+}
+.section .box:hover p {
+    opacity: 1;
+    bottom: 25%;
+}
+.section .box:hover img {
+    filter: blur(4.5px);
+}
+
+.information {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 10px;
+}
+.information .quti {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 35px 5px 35px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+}
+.quti:after {
+    content: "";
+    inset: 5px;
+    position: absolute;
+    z-index: -1;
+    background: white;
+}
+.quti:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid red;
+    border-radius: 8px;
+    position: absolute;
+    z-index: -1;
+    animation: animate 3.5s linear infinite;
+}
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+.quti img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s, filter 0.9s ;
+}
+.quti a {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 28px;
+    border-radius: 8px;
+    background: rgba(240, 255, 255, 0.719);
+    transition: background 0.8s, color 0.9s ,font-size 0.9s;
+}
+.quti:hover img {
+    transform: rotateY(-180deg);
+    filter: brightness(0);
+}
+.quti:hover a {
+    /* padding: 2px; */
+    background: blue;
+    color: azure;
+    font-size: 30px;
+}
+
+.base {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-grow: auto; */
+    gap: 5px;
+}
+.base .kbk {
+    border-radius: 5px;
+    border: 0.8px solid silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 350px;
+    position: relative;
+    background: rgba(0, 0, 128, 0.848);
+    gap: 8px;
+    transition: 0.8s;
+    overflow: hidden;
+}
+.kbk::after {
+    content: "";
+    position: absolute;
+    transform: rotate(60deg);
+    width: 10%;
+    height: 250%;
+    animation: animo 8s linear infinite;    
+    background: linear-gradient(to right, transparent, rgba(22, 197, 203, 0.607));
+}
+@keyframes animo {
+    0% {
+        transform: translate(-250px, -200px) rotate(60deg);
+    }
+    100% {
+        transform: translate(400px, 300px) rotate(60deg);
+    }
+}
+.kbk a {
+    color: gold;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    transition: 0.8s;
+}
+.kbk i {
+    -webkit-text-stroke: 0.4px gold;
+    font-size: 44px;
+    color: blue;
+    font-weight: 500;
+}
+.kbk i.fa-chevron-circle-left {
+    position: absolute;
+    top: 50px;
+    color: gold;
+    opacity: 0;
+    transition: 0.8s;
+}
+.kbk i.fa-link {
+    transform: rotateY(180deg);
+    position: relative;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.kbk:hover {
+    transform: rotateY(180deg);
+    background: rgb(77, 88, 243);
+    /* opacity: 0; */
+}
+.kbk:hover a {
+    transform: rotateY(180deg);
+}
+.kbk:hover .fa-link {
+    opacity: 0;
+}
+.kbk:hover .fa-chevron-circle-left {
+    opacity: 1;
+}
+.footer {
+    margin-top: 50px;
+    position: relative;
+    padding: 20px 35px 20px 35px;
+    background-color: #4b4c4d;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .right{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer .right i {
+    color: rgba(240, 255, 255, 0.622);
+    font-size: 18px;
+    font-weight: 400;
+}
