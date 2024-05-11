@@ -13,6 +13,7 @@ body {
 }
 .container {
     position: relative;
+    /* display: none; */
 }
 .header-page {
     position: relative;
@@ -320,4 +321,397 @@ h3 {
     color: rgba(240, 255, 255, 0.622);
     font-size: 18px;
     font-weight: 400;
+}
+
+
+
+.container2 {
+    display: none;
+    position: relative;
+}
+
+.container2 .head {
+    position: relative;
+    width: 100%;
+}
+.container2 .head img {
+    position: relative;
+    width: 100%;
+    height: 96vh;
+}
+.container2 .head .nav {
+    z-index: 10;
+    position: absolute;
+    transform: translate(-50%,10%);
+    top: 5%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;
+    background-color: teal;
+}
+.container2 .nav img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 0 5px 0 5px;
+    border-radius: 50%;
+}
+.container2 .nav .box {
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: white;
+}
+.container2 .box i {
+    margin-right: 5px;
+    color: black;
+    font-size: 16px;
+    font-weight: 200;
+}
+.container2 .box input {
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+.container2 input::placeholder {
+    font-weight: 400;
+    color: black;
+    font-size: 16px;
+}
+.container2 .nav a {
+    color: white;
+    font-weight: 100;
+    font-size: 16px;
+    text-align: center;
+}
+.container2 .wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.wrapper .row {
+    border-top: 1px solid silver;
+    box-shadow: inset 0 10px 8px 1.5px silver;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+.wrapper .row .img {
+    position: relative;
+    padding: 15px;
+    width: 38%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .row img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.container2 .wrapper .row p {
+    width: 50%;
+    position: relative;
+    font-size: 24px;
+    color: blue;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px 8px 5px 8px;
+}
+
+
+.container3 {
+    display: none;
+    position: relative;
+}
+.container3 .map {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.map .galery {
+    padding: 5px;
+    width: 25%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.galery img {
+    border-bottom: 1px solid silver;
+    position: relative;
+    width: 100%;
+    height: 25vh;
+}
+.map img {
+    position: relative;
+    zoom: 1;
+}
+
+
+.container4 {
+    display: none;
+    position: relative;
+}
+.wrap {
+    display: flex;
+    /* align-items: center; */
+    gap: 50px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrap .row {
+    padding: 0 0 0 15px;
+    width: 100%;
+    display: flex;
+    gap: 75px;
+    padding: 5px 0 0 0;
+    box-shadow: inset 0 15px 9px 2px cornsilk;
+}
+.wrap .row .card {
+    position: relative;
+    width: 225px;
+    height: 135px;
+    /* overflow: hidden; */
+}
+.card img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(to right, transparent,rgba(245, 240, 240, 0.6));
+    z-index: 55;
+    animation: card 8s linear infinite;
+}
+@keyframes  card {
+    0% {
+        left: -5%;
+    }
+    100% {
+        left: 105%;
+    }
+}
+
+.desc {
+    position: relative;
+    
+}
+.desc p {
+    font-size: 22px;
+    color: silver;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.desc p:first-child {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+}
+.desc span#span {
+    position: relative;
+    border-radius: 50%;
+    font-size: 24px;
+    background: yellow;
+    color: blue;
+    border: 1px solid red;
+    font-weight: 600;
+    padding: 15px;
+    z-index: 12;
+}
+.desc #back {
+    color: red;
+    border-radius: 50%;
+    padding: 15px;
+    background: yellow;
+    font-weight: 700;
+    border: 1px solid red;
+}
+
+.container5 {
+    display: none;
+    position: relative;
+}
+.statika {
+    position: relative;
+    width: 100%;
+}
+.statika .row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+    margin-top: 25px;
+}
+.statika .row .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 24px;
+    color: blue;
+}
+.statika .row .line {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background: silver;
+    border-radius: 2px;
+}
+.statika .row .line::before {
+    transition: 0.9s;
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+    width: calc(var(--w) * 1%);
+    background: var(--clr);
+}
+#passenger [sarlavha] {
+    position: relative;
+    text-align: center;
+    font-size: 28px;
+    color: blue;
+}
+.informationPassenger {
+    padding: 5px 5px 5px 15px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.informationPassenger .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.informationPassenger p {
+    position: relative;
+    width: 50%;
+    font-size: 26px;
+    color: blue;
+}
+.informationPassenger .row .box {
+    width: 30%;
+    height: 200px;
+    position: relative;
+}
+.informationPassenger .box img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+.counter .box {
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    box-shadow: inset 0 0 5px 1px indigo;
+}
+.counter .box p {
+    text-align: center;
+    position: relative;
+    font-size: 26px;
+    font-weight: 800;
+    color: blue;
+}
+.counter .box p.count {
+    position: relative;
+    font-size: 24px;
+}
+
+.container6 {
+    display: none;
+    position: relative;
+}
+.container6 .little_wrap {
+    padding: 30px 5px 20px 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.container6 .little_wrap .fluid {
+    position: relative;
+    width: 45%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 5px 15px 5px 15px;
+    border: 1px solid silver;
+    border-radius: 8px;
+}
+.container6 .fluid.message {
+    height: 300px;
+}
+.fluid label {
+    color: blue;
+    font-size: 24px;
+    font-weight: 500;
+}
+.fluid input {
+    position: relative;
+    padding: 5px 10px 5px 10px;
+}
+.fluid button {
+    position: relative;
+    background: blue;
+    color: azure;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    border: 2px solid cadetblue;
+}
+
+
+
+
+.hide {
+    display: none;
+}
+.screen {
+    display: block;
 }
